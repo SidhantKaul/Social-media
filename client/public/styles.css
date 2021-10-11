@@ -1,0 +1,178 @@
+body {
+    background-color: #E8F6EF;
+    
+}
+#root {
+    font-family: 'Poppins', sans-serif;
+}
+/* login */
+.header {
+    text-align: center;
+    height: 50px;
+}
+.login-btn {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+}
+.profile {
+    color: #272727;
+    width: 75%;
+    margin: auto;
+}
+.profile h1 {
+    text-align: center;
+}
+/* feed */
+.navbar {
+    background-color: #FFE194;
+    padding: 0 20px;
+    /* position: fixed; */
+}
+.content {
+    width: 60%;
+    margin: 50px auto;
+    border-radius: 8px;
+    border: 2px solid #B8DFD8;
+    background-color: #4C4C6D;
+    box-shadow: 10px 10px 14px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 14px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 14px -7px rgba(0,0,0,0.75);
+}
+.txt {
+    text-align: center;
+    color: #EFFFFB;
+}
+.reaction a {
+    margin: 10px 10px;
+    color: #272727;
+}
+
+.reaction p {
+    padding: 0;
+    margin-bottom: 0;
+}
+.img {
+    width: 50%;
+    height: 30%;
+    /* height: 250px; */
+    margin: auto;
+}
+.content-img {
+    width: 100%;
+}
+.content-name {
+    text-align: center;
+}
+/* result */
+.result {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    border: 2px solid #FFE194;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    position: relative;
+}
+.result-photo {
+    width: 10%;
+}
+.result-img {
+    width: 100%;
+    height: 75px;
+    border-radius: 50%;
+}
+.result-details {
+    width: 60%;
+    padding: 5%;
+}
+.result-add-sign {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+    right: 1%;
+    color: #B8DFD8;
+}
+/* myprofile */
+.Myprofile-img {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.Myprofile-img-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 5px solid #B8DFD8;
+    
+}
+.Myprofile-details {
+    width: 30%;
+    padding-left: 20px;
+}
+/* create */
+.create {
+    padding: 20px;
+}
+.create h1 {
+    text-align: center;
+}
+/* comment */
+.comment h1 {
+    text-align: center;
+}
+.comment {
+    padding-left:20px;
+    padding-right: 20px;
+}
+.comment-div {
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid #FFE194;
+    border-radius: 8px;
+}
+.comment-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.comment-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #B8DFD8;
+}
+.pagination {
+    margin: 15px auto;
+    display: flex;
+    list-style: none;
+    outline: none;
+    justify-content: center;
+    align-content: stretch;
+  }
+  .pagination > .active > a{
+    background-color: #4C4C6D ;
+    border-color: #4C4C6D ;
+    color: #fff;
+  }
+  .pagination > li > a{
+    border: 1px solid #4C4C6D ;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+  }
+  .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    background-color: #4C4C6D ;
+    border-color: #4C4C6D;
+    outline: none ;
+  }
+  .pagination > li > a, .pagination > li > span{
+    color: #4C4C6D
+  }
+  .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+    border-radius: unset
+  }
