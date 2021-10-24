@@ -163,21 +163,31 @@ app.post("/addcomments/:id", function (req, res) {
   let userId = req.params.id.split("@")[0];
   let postId = req.params.id.split("@")[1];
   console.log(userId + " " + postId);
+  let im = "";
+  
   User.findOne({ id: userId }, function (err, result) {
     if (err) console.log(err);
     else {
       result.post.map((elem) => {
         if (elem._id.toString() === postId) {
-          const comment = new Comment({
-            username: req.user.firstName + " " + req.user.lastName,
-            userid: userId,
-            comment: req.body.text,
-          });
-          elem.comments.push(comment);
-          console.log(comment);
-          result.save((err) => {
-            if (!err) res.send("OK");
-          });
+          console.log(result.img);
+          User.findOne({id:req.user.id},function(err,result1) {
+            if(err)
+            console.log(err);
+            else {
+              const comment = new Comment({
+                username: req.user.firstName + " " + req.user.lastName,
+                userid: userId,
+                comment: req.body.text,
+                img: result1.img
+              });
+              elem.comments.push(comment);
+              console.log(comment);
+              result.save((err) => {
+                if (!err) res.send("OK");
+              });
+            }
+          })
         }
       });
     }
