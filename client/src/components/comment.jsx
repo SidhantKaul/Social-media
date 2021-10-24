@@ -9,7 +9,8 @@ function Comment(props) {
                 <div className="comment-div">
                 <div className="comment-flex">
                     <div className="comment-flex-item">
-                        <img className="comment-img" src={elem.img} alt="" />
+                    <img  src={"https://res.cloudinary.com/dw3lbt8z4/image/upload/v1633431293/"+elem.img+".png"} className="comment-img" alt="f" />
+                        {/* <img className="comment-img" src={elem.img} alt="" /> */}
                     </div>
                     <div className="comment-flex-item">
                         <h3>{elem.username}</h3>
