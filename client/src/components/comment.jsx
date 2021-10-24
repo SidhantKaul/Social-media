@@ -9,7 +9,7 @@ function Comment(props) {
                 <div className="comment-div">
                 <div className="comment-flex">
                     <div className="comment-flex-item">
-                        <img className="comment-img" src={img} alt="" />
+                        <img className="comment-img" src={elem.img} alt="" />
                     </div>
                     <div className="comment-flex-item">
                         <h3>{elem.username}</h3>

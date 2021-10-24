@@ -103,7 +103,8 @@ function Profile() {
           <Form.Control onClick={textClick} style={{border:"1px solid #272727"}} onChange={handleBio} value={bio} className="shadow-none" as="textarea" rows={textArea} />
         </Form.Group>
       </Form>
-      <Button onClick={handleClick} style={{backgroundColor:"#4F98CA"}} variant="primary">Set Up Profile</Button>{' '}
+      {first!==""&&last!==""&&imgUrl!==""?<Button onClick={handleClick} style={{backgroundColor:"#4F98CA"}} variant="primary">Set Up Profile</Button>:
+      <Button style={{backgroundColor:"#4F98CA"}} variant="primary">Add required info</Button>}
     </div>
   );
 }
