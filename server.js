@@ -105,7 +105,7 @@ passport.use(
       clientID:
         "350793599005-0v0fmo1muo1n0ci3f8fe9195t1gqh5ju.apps.googleusercontent.com",
       clientSecret: "r-MAnh5k6pQQZkQuprm0Khuy",
-      callbackURL: "https://guarded-journey-24561.herokuapp.com/auth/google/social",
+      callbackURL: "https://socialmedia-ezud.onrender.com/auth/google/social",
       // callbackURL:"http://localhost:9000/auth/google/social",
       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
     },
